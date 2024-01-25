@@ -1,0 +1,7 @@
+Progress Update Document Content
+
+In place of your progress document, write about your experience with github. Create a github account, clone a project. Practice adding files to the global repository and updating or adding files to your local repository. Attach screen shots of the commands you implemented on github. 
+
+This is worth 7 points.
+
+Due by Wednesday Jan 24th 11:59 PM CDT
