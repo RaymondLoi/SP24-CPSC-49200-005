@@ -2,7 +2,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .logo {
@@ -39,4 +39,29 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.navigation {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: lightskyblue;
+}
+
+.button {
+  margin: 2px 10px;
+}
+
+.noMargin {
+  margin: 0px;
+  color: #888;
+}
+
+.quote {
+  background-color: azure;
+  color:rgb(36, 36, 88);
+  border-style: inset;
+  border-color: whitesmoke;
+  padding: 1em;
+  font-size: large;
+  font-weight: bolder;
 }
