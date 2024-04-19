@@ -1,0 +1,49 @@
+<!--https://www.w3schools.com/Css/tryit.asp?filename=trycss_navbar_horizontal_black_active-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+                background-color: #111;
+            }
+
+            .active {
+                background-color: #04AA6D;
+            }
+        </style>
+
+        <meta charset="UTF-8">
+        <title>Horizontal Naviagtion Bar</title>
+    </head>
+
+    <body>
+        <h2>Horizontal Navigation Bar with Active Class</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vertical.html">Vertical</a></li>
+            <li><a href="active.html">Active</a></li>
+            <li><a class="active" href="horizontal.html">Horizontal</a></li>
+        </ul>
+    </body>
+</html>
