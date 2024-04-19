@@ -8,12 +8,11 @@ function App() {
       <h1>Air Quality Information</h1>
       <hr></hr>
       <div className='navigation'>
-        <form action="https://raymondloi.github.io/airqualityinfo.github.io/environmentalJustice.html" method="get" target="_blank">
-          <button class="button" type="submit">Environmental Justice</button>
-        </form>
-        <form action="https://raymondloi.github.io/airqualityinfo.github.io/quiz.html" method="get" target="_blank">
-          <button class="button" type="submit">Quiz</button>
-        </form>
+        <ul>
+          <li><a class="active" href="#Home">Home</a></li>
+          <li><a href="https://raymondloi.github.io/airqualityinfo.github.io/environmentalJustice.html">Environmental Justice</a></li>
+          <li><a href="https://raymondloi.github.io/airqualityinfo.github.io/quiz.html">Quiz</a></li>
+        </ul>
       </div>
 
       <div>
