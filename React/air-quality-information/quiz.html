@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/cloud_logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Quality Information- Quiz</title>
+  </head>
+
+<body>
+    <script type="module" src="/src/quiz.jsx"></script>
+    
+
+        <div id="app"></div>
+        <!-- load two React scripts from an external website called unpkg.com-->
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <!-- Babel Script -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/jsx">
+        const app = document.getElementById('app');
+
+        function Header({ title }) {
+            console.log(title);
+            return <h1>{title}</h1>
+        }
+
+        function QuestionHeader({ question }) {
+            console.log(question);
+            return <h2>{question}</h2>
+        }
+
+            function Toolbar({ onAnswer }) {
+                return (
+                    <div>
+                        <Button onClick={onAnswer}>
+                            Show the Answer
+                        </Button>
+                    </div>
+                );
+            }
+
+            function Button({ onClick, children }) {
+                return (
+                    <button onClick={onClick}>
+                        {children}
+                    </button>
+                )
+            }
+
+        function HomePage() {
+
+            return (
+                <div>
+                    <h2>Air Quality Information</h2>
+                    <hr></hr>
+                    <div className='navigation'>
+                    <ul>
+                        <li><a href='index.html'>Home</a></li>
+                        <li><a href="environmentalJustice.html">Environmental Justice</a></li>
+                        <li><a class="active" href="#quiz">Quiz</a></li>
+                        <li><a href="climate.html">Climate</a></li>
+                    </ul>
+                </div>
+
+                <Header title="Quiz" />
+                <QuestionHeader question="What is an AQI of satisfactory air quality?" />
+                <Toolbar
+                    onAnswer={() => alert('0 to 50 AQI')}
+                />
+                <QuestionHeader question="What is Particulate Matter?" />
+                <Toolbar
+                    onAnswer={() => alert('Inhalable particles, composed of sulphate, nitrates, ammonia, sodium chloride, black carbon, mineral dust or water.')}
+                />
+            </div>
+            );
+      }
+
+      const root = ReactDOM.createRoot(app);
+      root.render(<HomePage />);
+    </script>
+
+    
+</body>
+
+</html>

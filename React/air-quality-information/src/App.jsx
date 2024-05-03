@@ -10,8 +10,9 @@ function App() {
       <div className='navigation'>
         <ul>
           <li><a class="active" href="#Home">Home</a></li>
-          <li><a href="https://raymondloi.github.io/airqualityinfo.github.io/environmentalJustice.html">Environmental Justice</a></li>
-          <li><a href="https://raymondloi.github.io/airqualityinfo.github.io/quiz.html">Quiz</a></li>
+          <li><a href="environmentalJustice.html">Environmental Justice</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="climate.html">Climate</a></li>
         </ul>
       </div>
 

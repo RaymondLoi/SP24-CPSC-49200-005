@@ -85,3 +85,17 @@
   font-size: large;
   font-weight: bolder;
 }
+
+.relativePosition {
+  position: relative;
+}
+
+.quote2 {
+  background-color: rgb(36, 36, 88);
+  color:white;
+  border-style: inset;
+  border-color: whitesmoke;
+  padding: 1em;
+  font-size: large;
+  font-weight: bolder;
+}
